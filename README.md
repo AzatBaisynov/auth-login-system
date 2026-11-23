@@ -37,9 +37,10 @@ apps/
 1. `pages` собирают страницу из `modules` и `shared`.
 2. `modules` используют `shared`, но не импортируют друг друга.
 3. `shared` ничего не знает о модулях.
-4. Алиас `@/` = `src/`.
+4. Файлы модуля (`api.ts`, `types.ts`, компоненты) хранятся в его корне; вложенные папки добавляются только когда это упрощает навигацию.
+5. Алиас `@/` = `src/`.
 
-Модуль внутри: `components/`, `api.ts`, `types.ts`.
+Например: `modules/users/UsersTable.tsx`, `modules/users/api.ts`, `modules/users/types.ts`.
 
 ## Git
 
